@@ -1,0 +1,139 @@
+.example-seven {
+	margin-top: 3em;
+	height: 16em;
+	width: 16em;
+}
+
+.monster {
+	height: 15em;
+	width: 15em;
+	position: relative;
+}
+.monster-body {
+	height: 10em;
+	width: 10em;
+	border-radius: 100%;
+	position: relative;
+	z-index: 5;
+	background: #f9c667; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f9c667 45%, #f79621 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(45%,#f9c667), color-stop(100%,#f79621)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f9c667 45%,#f79621 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f9c667 45%,#f79621 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f9c667 45%,#f79621 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f9c667 45%,#f79621 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
+}
+
+.monster-eye-one{
+	height: 1em;
+	width: .5em;
+	background-color: black;
+	border-radius: 110%;
+	display: inline-block;
+	margin-top: 2.65em;
+	margin-left: 42%;
+}
+
+.monster-eye-two {
+	height: 1em;
+	width: .5em;
+	background-color: black;
+	border-radius: 110%;
+	display: inline-block;
+	margin-top: 2.65em;
+	margin-right: 42%;
+	float: right;
+	
+}
+
+.monster-mouth {
+	height: 1em;
+	width: 5em;
+	background-color: black;
+	border-radius: .4em .4em 50% 50%;
+	margin-top: 1.3em;
+	margin-left: 21%;
+	position: relative;
+	z-index: 100;
+	box-shadow: .05em .05em .1em black;
+}
+
+/*.monster-tooth {
+	height: .8em;
+	width: .4em;
+	background-color: #fff;
+	border-radius: 45%;
+	position: absolute;
+	bottom: -2;
+	left: 1.2em;
+	z-index: -1;
+}*/
+
+.shadow {
+	width: 7em;
+	height: .55em;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.1);
+	
+	position: absolute;
+	bottom:4.6em;
+
+
+}
+
+
+@-webkit-keyframes shadowmove{
+    
+    0% {left: 5%}
+    25% {left: 5.25%;}
+    50% {left: 5.5%;}
+    75% {left: 5.25%;}
+    100% {left: 5%;}
+}
+
+@keyframes {
+    
+    0% {left: 5%}
+    25% {left: 5.25%;}
+    50% {left: 5.5%;}
+    75% {left: 5.25%;}
+    100% {left: 5%;}
+}
+
+.shadow{
+    -webkit-animation:shadowmove 4s infinite linear;
+    animation:shadowmove 4s infinite linear;
+}
+  
+.monster-body:hover{
+	-webkit-transform: translateY(5px);
+}
+
+@-webkit-keyframes monstertilt{
+    
+    0% {-webkit-transform: rotate(0deg); left: 0%}
+    25% {-webkit-transform: rotate(7deg);left: 5.25%;}
+    50% {-webkit-transform: rotate(0deg);left: 0%}
+    75% {-webkit-transform: rotate(-7deg);left: -5.25%;}
+    100% {-webkit-transform: rotate(0deg);left: 0%}
+}
+
+@keyframes {
+    
+    0% {transform: rotate(0deg); left: 0%}
+    25% {transform: rotate(7deg);left: 5.25%;}
+    50% {transform: rotate(0deg);left: 0%}
+    75% {transform: rotate(-7deg);left: -5.25%;}
+    100% {transform: rotate(0deg);left: 0%}
+}
+
+
+.monster-body {
+	-webkit-animation:monstertilt 4s infinite linear;
+    animation:monstertilt 4s infinite linear;
+}
+
